@@ -47,6 +47,27 @@ The HTML content is parsed using BeautifulSoup to navigate and search for the ta
       ts = [i.text for i in headers]
      df = pd.DataFrame(columns=ts)
     
+3. Extracting Table Headers
+We extract the column headers (like stock name, price, etc.) by finding all the <th> tags in the table.
+   ```bash
+   headers = table.find_all("th")
+   ts = [i.text for i in headers]
+   df = pd.DataFrame(columns=ts)
+
+4. Scraping Table Data
+Next, we loop through all the rows in the table and scrape the data from each <td> tag.
+     ```bash
+     rows = table.find_all("tr")
+    for i in rows[1:]:
+    dr = i.find_all("td")
+    row = [tr.text for tr in dr]
+    l = len(df)
+    df.loc[l] = row
+     
+5. Saving Data to CSV
+Finally, the DataFrame is exported to a CSV file for further analysis.
+     ```bash
+     df.to_csv("stock_market.csv")
 
 
 

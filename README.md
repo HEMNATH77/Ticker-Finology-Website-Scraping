@@ -33,6 +33,22 @@ To run this project, you'll need the following Python libraries:
 - Extract stock data row by row.
 - Store the data in a Pandas DataFrame and save it as a CSV file.
 
+## Code Explanation
+ 1. Fetching the Web Page
+ We use the requests library to get the HTML content from the website.
+    ```bash
+    url = "https://ticker.finology.in/"
+    r = requests.get(url)
+
+2. Parsing the HTML
+The HTML content is parsed using BeautifulSoup to navigate and search for the table element.
+    ```bash
+      headers = table.find_all("th")
+      ts = [i.text for i in headers]
+     df = pd.DataFrame(columns=ts)
+    
+
+
 
 
 

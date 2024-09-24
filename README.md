@@ -70,6 +70,11 @@ Finally, the DataFrame is exported to a CSV file for further analysis.
      df.to_csv("stock_market.csv")
 
 - Proof:
+             
+
+ https://github.com/user-attachments/assets/779b93af-1a15-4715-aad6-aaa0a4307a4b  
+
+
 
 ## Conclusion
 This project serves as a foundational example of how to efficiently collect stock market data from the web using Python. Web scraping is a crucial skill, particularly for financial analysts, data scientists, and developers who want to gather real-time or periodic data from public websites. By extracting data from the Finology website, this project demonstrates how to convert raw HTML content into structured data that can be analyzed, visualized, or stored for future use.

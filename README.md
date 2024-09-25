@@ -9,11 +9,11 @@ This project demonstrates how to scrape stock market data from the Finology webs
 - Requirements
 - Project Workflow
 - Code Explanation
-  -1. Fetching the Web Page
-  -2. Parsing the HTML
-  -3. Extracting Table Headers
-  -4. Scraping Table Data
-  -5. Saving Data to CSV
+  - 1. Fetching the Web Page
+  - 2. Parsing the HTML
+  - 3. Extracting Table Headers
+  - 4. Scraping Table Data
+  - 5. Saving Data to CSV
 
 
 ## Requirements
